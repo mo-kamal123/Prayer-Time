@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="">
+      <!-- <a href="" class="font-normal text-2xl px-5 py-2 bg-teal-400 ">Prayer Time</a> -->
+      <div class="flex justify-center"></div>
+      <div class="background absolute top-0 left-0 -z-10 w-full h-screen"></div>
+      <div
+        class="flex items-center absolute top-0 left-0 bg-black/40 w-full h-svh z-0"
+      >
+        <div class="w-full flex flex-col items-center text-white">
+          <div id="currcountry" class="time text-7xl mb-5">Egypt</div>
+          <div id="date" class="time text-3xl mb-5">Date Today : 06-11-2024</div>
+          <div
+            class="prayer bg-teal-700/50 flex gap-10 items-center justify-around px-10 w-full h-32"
+          >
+            <div class="flex flex-col items-center">
+              <p class="font-semibold text-2xl">Sunrise</p>
+              <p id="sunrise">11:38 am</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="font-semibold text-2xl">Dhuhr</p>
+              <p id="dhuhr">11:38 am</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="font-semibold text-2xl">Asr</p>
+              <p id="asr">11:38 am</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="font-semibold text-2xl">Maghrib</p>
+              <p id="maghrib">11:38 am</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="font-semibold text-2xl">Isha</p>
+              <p id="ishaa">11:38 am</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="font-semibold text-2xl">Fajr</p>
+              <p id="fajr">11:38 am</p>
+            </div>
+          </div>
+          <div class="options">
+            <form class="flex flex-col items-center gap-3 mt-5 bg-teal-600/40 rounded">
+              <label for="country" class="">Choose your Country</label>
+              <select class="text-black p-1 rounded-b" name="country" id="country" onchange="updateCountryValue()">
+                <option value="Egypt">Egypt</option>
+                <option onclick={changeCountry()} value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Morocco">Morocco</option>
+                <option value="United Arab Emirates">
+                  United Arab Emirates
+                </option>
+                <option value="Qatar">Qatar</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Oman">Oman</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Syria">Syria</option>
+                <option value="Iran">Iran</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Palestine">Palestine</option>
+                <option value="Libya">Libya</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Algeria">Algeria</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
