@@ -68,21 +68,4 @@ fillAllTimes = (id, time) => {
 };
 prayerTimes("Cairo", "Egypt");
 
-// old code
-// let date = document.getElementById("date")
-// axios
-// .get(
-//   `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}`
-// )
-// .then((res) => {
-//   let pray = res.data.data.timings;
-//   let currDate = res.data.data.date.gregorian.date
-//   console.log(date);
-//   date.textContent = `Date Today : ${currDate}`
-//   sunrise.textContent = convertTo12Format(pray.Sunrise);
-//   dhuhr.textContent = convertTo12Format(pray.Dhuhr);
-//   asr.textContent = convertTo12Format(pray.Asr);
-//   maghrib.textContent = convertTo12Format(pray.Maghrib);
-//   ishaa.textContent = convertTo12Format(pray.Isha);
-//   fajr.textContent = convertTo12Format(pray.Fajr);
-// });
+
